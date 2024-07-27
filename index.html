@@ -3,87 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ahmed Mohammed</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
-        <section class="profile">
-            <div class="top_section"><span class="name">Ahmed</span>.me</div>
-            <div class="mid_section">
+        <div class="profile">
+            <div class="profile_top"><span class="name">Ahmed</span>.me</div>
+            <div class="profile_mid">
                 <div class="salute">Hello</div>
-                <p class="introd">I'm <span class="introd animate__animated animate__flash">Ahmed</span></p>
-                <p class="brief">Seasoned web developer with 8+ years' experience. Proficient in HTML, CSS, JavaScript, PHP, MySQL, WordPress, and CodeIgniter. Skilled in creating dynamic web applications and data-driven solutions.</p>
+                <div class="intro">I'm Ahmed</div>
+                <div class="brief">Seasoned web developer with 8+ years' experience. Proficient in HTML, CSS, JavaScript, PHP, MySQL, WordPress, and CodeIgniter. Skilled in creating dynamic web applications and data-driven solutions.</div>
             </div>
-            <div class="bot_section">
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+            <div class="profile_bot">
+                <a href="https://www.facebook.com/itsahmedforu" class="fb" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/itsahmedforu" class="tw" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://in.linkedin.com/in/itsahmedforu" class="in" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/ahmed-builds" class="gh" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
-        </section>
-        <main class="content">
+        </div>
+        <div class="page">
             <div class="page_content home" id="home">
-                <div class="hero_banner">
-                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> <dotlottie-player src="https://lottie.host/8847bd0e-ffb5-4e7b-9797-d32f205c4c54/xJ89rkafjM.json" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></dotlottie-player>
+                <div class="page_body">
+                    <div class="hero_container">
+                        <div class="hero_banner">
+                            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> <dotlottie-player src="https://lottie.host/8847bd0e-ffb5-4e7b-9797-d32f205c4c54/xJ89rkafjM.json" background="transparent" speed="1" style="width: auto; height: 100%;" loop autoplay></dotlottie-player>
+                        </div>
+                        <p class="hero_content">To secure a challenging web development role leveraging 8+ years of full-stack experience. Seeking to contribute expertise in HTML, CSS, JavaScript, PHP, MySQL, WordPress, and CodeIgniter to build innovative web applications.</p>
+                    </div>
                 </div>
-                <p class="hero_content">To secure a challenging web development role leveraging 8+ years of full-stack experience. Seeking to contribute expertise in HTML, CSS, JavaScript, PHP, MySQL, WordPress, and CodeIgniter to build innovative web applications.</p>
-
             </div>
             <div class="page_content about" id="about">
-                <div class="page-header">
-                    <h2 class="page_title">About</h2>
-                </div>
-                <div class="page-body">
+                <div class="page_header">About</div>
+                <div class="page_body">
                     <p>With over eight years of dedicated experience, I am a seasoned web developer proficient in HTML, CSS, Bootstrap, MySQL, CodeIgniter, PHP, JavaScript, and WordPress. My expertise encompasses both front-end and back-end development, enabling me to craft robust, dynamic, and user-centric web applications.</p>
                     <p>I have a proven track record in designing and developing visually appealing WordPress themes tailored to diverse client needs. Beyond aesthetics, I excel in building data-driven applications, including comprehensive survey questionnaires and insightful dashboards powered by Chart.js. My proficiency in transforming raw data into actionable insights through data analysis and visualization adds significant value to my skill set.</p>
                     <p>I am a results-oriented professional with a strong problem-solving ability. My passion for staying updated with industry advancements ensures that I deliver cutting-edge solutions. I thrive in collaborative environments and am committed to exceeding client expectations.</p>
                 </div>
             </div>
             <div class="page_content skills" id="skills">
-                <div class="page-header">
-                    <h2 class="page_title">Skills</h2>
+                <div class="page_header">Skills</div>
+                <div class="page_body">
+                    <div class="skill_progress">
+                        <label for="htmlProgress"><i class="fa-brands fa-html5"></i> HTML</label>
+                        <div class="progressBarContainer">
+                            <progress id="htmlProgress" class="progressAnimate" max="100" value="95">95%</progress>
+                            <span id="html5ProgressValue" class="progressLabel">95%</span>
+                        </div>
+                    </div>
+                    <div class="skill_progress">
+                        <label for="cssProgress"><i class="fa-brands fa-css3"></i> CSS</label>
+                        <div class="progressBarContainer">
+                            <progress id="cssProgress" class="progressAnimate" max="100" value="70">70%</progress>
+                            <span id="css3ProgressValue" class="progressLabel">70%</span>
+                        </div>
+                    </div>
+                    <div class="skill_progress">
+                        <label for="jsProgress"><i class="fa-brands fa-js"></i> JavaScript</label>
+                        <div class="progressBarContainer">
+                            <progress id="jsProgress" class="progressAnimate" max="100" value="10">10%</progress>
+                            <span id="jsProgressValue" class="progressLabel">10%</span>
+                        </div>
+                    </div>
+                    <div class="skill_progress">
+                        <label for="jqueryProgress"><i class="fa-solid fa-code"></i> Jquery</label>
+                        <div class="progressBarContainer">
+                            <progress id="jqueryProgress" class="progressAnimate" max="100" value="20">20%</progress>
+                            <span id="jqyProgressValue" class="progressLabel">20%</span>
+                        </div>
+                    </div>
+                    <div class="skill_progress">
+                        <label for="bootstrapProgress"><i class="fa-brands fa-bootstrap"></i> Bootstrap</label>
+                        <div class="progressBarContainer">
+                            <progress id="bootstrapProgress" class="progressAnimate" max="100" value="95">95%</progress>
+                            <span id="bspProgressValue" class="progressLabel">95%</span>
+                        </div>
+                    </div>
+                    <div class="skill_progress">
+                        <label for="wordpressProgress"><i class="fa-brands fa-wordpress"></i> WordPress</label>
+                        <div class="progressBarContainer">
+                            <progress id="wordpressProgress" class="progressAnimate" max="100" value="70">70%</progress>
+                            <span id="wpsProgressValue" class="progressLabel">70%</span>
+                        </div>
+                    </div>
+                    <div class="skill_progress">
+                        <label for="phpProgress"><i class="fa-brands fa-php"></i> PHP</label>
+                        <div class="progressBarContainer">
+                            <progress id="phpProgress" class="progressAnimate" max="100" value="60">60%</progress>
+                            <span id="phpProgressValue" class="progressLabel">60%</span>
+                        </div>
+                    </div>
+                    <div class="skill_progress">
+                        <label for="ciProgress"><i class="fa-solid fa-code"></i> CodeIgniter</label>
+                        <div class="progressBarContainer">
+                            <progress id="ciProgress" class="progressAnimate" max="100" value="45">45%</progress>
+                            <span id="ciProgressValue" class="progressLabel">45%</span>
+                        </div>
+                    </div>
+                    <div class="skill_progress">
+                        <label for="mysqlProgress"><i class="fa-solid fa-database"></i> MySQL</label>
+                        <div class="progressBarContainer">
+                            <progress id="mysqlProgress" class="progressAnimate" max="100" value="50">50%</progress>
+                            <span id="mysqlProgressValue" class="progressLabel">50%</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="page-body"></div>
             </div>
             <div class="page_content projects" id="projects">
-                <div class="page-header">
-                    <h2 class="page_title">Projects</h2>
+                <div class="page_header">Projects</div>
+                <div class="page_body">
+                    <div class="row">
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_img">
+                                        <img src="./assets/images/3-column-preview-card.jpg" alt="">
+                                    </div>
+                                    <div class="card_title">3 Column Preview</div>
+                                    <div class="card_desc">                            
+                                        <span class="challenge_html">HTML</span>  
+                                        <span class="challenge_css3">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="card_body"></div>
+                                <div class="card_footer">
+                                    <div class="published_on">17th July 2024</div>
+                                    <div class="card_button">
+                                        <a href="https://mentor-challenges.netlify.app/3-column-preview-card/" class="card_btn" target="_blank">View <i class="fa fa-external-link"></i></a>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_img">
+                                        <img src="./assets/images/social-proof.jpg" alt="Social Proof">
+                                    </div>
+                                    <div class="card_title">Social Proof</div>
+                                    <div class="card_desc">                            
+                                        <span class="challenge_html">HTML</span>  
+                                        <span class="challenge_css3">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="card_body"></div>
+                                <div class="card_footer">
+                                    <div class="published_on">17th July 2024</div>
+                                    <div class="card_button">
+                                        <a href="https://mentor-challenges.netlify.app/social-proof/" class="card_btn" target="_blank">View <i class="fa fa-external-link"></i></a>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_img">
+                                        <img src="./assets/images/recipe-page.jpg" alt="Receipe Page">
+                                    </div>
+                                    <div class="card_title">Receipe Page</div>
+                                    <div class="card_desc">                       
+                                        <span class="challenge_html">HTML</span>  
+                                        <span class="challenge_css3">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="card_body"></div>
+                                <div class="card_footer">
+                                    <div class="published_on">17th July 2024</div>
+                                    <div class="card_button">
+                                        <a href="https://mentor-challenges.netlify.app/recipe-page/" class="card_btn" target="_blank">View <i class="fa fa-external-link"></i></a>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_img">
+                                        <img src="./assets/images/testimonials-grid.jpg" alt="Testimonials Grid">
+                                    </div>
+                                    <div class="card_title">Testimonials Grid</div>
+                                    <div class="card_desc">                      
+                                        <span class="challenge_html">HTML</span>  
+                                        <span class="challenge_css3">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="card_body"></div>
+                                <div class="card_footer">
+                                    <div class="published_on">17th July 2024</div>
+                                    <div class="card_button">
+                                        <a href="https://mentor-challenges.netlify.app/testimonials-grid/" class="card_btn" target="_blank">View <i class="fa fa-external-link"></i></a>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_img">
+                                        <img src="./assets/images/product-preview.jpg" alt="Product Preview">
+                                    </div>
+                                    <div class="card_title">Product Preview</div>
+                                    <div class="card_desc">                            
+                                        <span class="challenge_html">HTML</span>  
+                                        <span class="challenge_css3">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="card_body"></div>
+                                <div class="card_footer">
+                                    <div class="published_on">12th July 2024</div>
+                                    <div class="card_button">
+                                        <a href="https://mentor-challenges.netlify.app/product-preview/" class="card_btn" target="_blank">View <i class="fa fa-external-link"></i></a>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_img">
+                                        <img src="./assets/images/qr-code.jpg" alt="QR Code">
+                                    </div>
+                                    <div class="card_title">QR Code</div>
+                                    <div class="card_desc">                            
+                                        <span class="challenge_html">HTML</span>  
+                                        <span class="challenge_css3">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="card_body"></div>
+                                <div class="card_footer">
+                                    <div class="published_on">12th July 2024</div>
+                                    <div class="card_button">
+                                        <a href="https://mentor-challenges.netlify.app/qr-code/" class="card_btn" target="_blank">View <i class="fa fa-external-link"></i></a>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_img">
+                                        <img src="./assets/images/results-summary.jpg" alt="Results Summary">
+                                    </div>
+                                    <div class="card_title">Results Summary</div>
+                                    <div class="card_desc">                            
+                                        <span class="challenge_html">HTML</span>  
+                                        <span class="challenge_css3">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="card_body"></div>
+                                <div class="card_footer">
+                                    <div class="published_on">12th July 2024</div>
+                                    <div class="card_button">
+                                        <a href="https://mentor-challenges.netlify.app/results-summary/" class="card_btn" target="_blank">View <i class="fa fa-external-link"></i></a>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_img">
+                                        <img src="./assets/images/stats-preview-card.jpg" alt="Stats Preview">
+                                    </div>
+                                    <div class="card_title">Stats Preview</div>
+                                    <div class="card_desc">                            
+                                        <span class="challenge_html">HTML</span>  
+                                        <span class="challenge_css3">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="card_body"></div>
+                                <div class="card_footer">
+                                    <div class="published_on">12th July 2024</div>
+                                    <div class="card_button">
+                                        <a href="https://mentor-challenges.netlify.app/stats-preview-card/" class="card_btn" target="_blank">View <i class="fa fa-external-link"></i></a>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_img">
+                                        <img src="./assets/images/social-links-profile.jpg" alt="Social links profile">
+                                    </div>
+                                    <div class="card_title">Social links profile</div>
+                                    <div class="card_desc">                            
+                                        <span class="challenge_html">HTML</span>  
+                                        <span class="challenge_css3">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="card_body"></div>
+                                <div class="card_footer">
+                                    <div class="published_on">12th July 2024</div>
+                                    <div class="card_button">
+                                        <a href="https://mentor-challenges.netlify.app/social-links-profile/" class="card_btn" target="_blank">View <i class="fa fa-external-link"></i></a>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_img">
+                                        <img src="./assets/images/blog-preview.jpg" alt="Blog Preview Card">
+                                    </div>
+                                    <div class="card_title">Blog Preview Card</div>
+                                    <div class="card_desc">                            
+                                        <span class="challenge_html">HTML</span>  
+                                        <span class="challenge_css3">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="card_body"></div>
+                                <div class="card_footer">
+                                    <div class="published_on">12th July 2024</div>
+                                    <div class="card_button">
+                                        <a href="https://mentor-challenges.netlify.app/blog-preview/" class="card_btn" target="_blank">View <i class="fa fa-external-link"></i></a>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            
+                        </div>
+                        <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            
+                        </div> -->
+                    </div>
                 </div>
-                <div class="page-body"></div>
             </div>
             <div class="page_content contact" id="contact">
-                <div class="page-header">
-                    <h2 class="page_title">Contact</h2>
-                </div>
-                <div class="page-body">
+                <div class="page_header">Contact</div>
+                <div class="page_body">
                     <form>
-                        <div class="row">
+                        <div class="form-row">
                             <input type="text" name="visitorName" id="visitorName" class="form-control" placeholder="Name">
                         </div>
-                        <div class="row">
+                        <div class="form-row">
                             <input type="email" name="visitorEmail" id="visitorEmail" class="form-control" placeholder="eMail">
                         </div>
-                        <div class="row">
+                        <div class="form-row">
                             <input type="tel" name="visitorMobile" id="visitorMobile" class="form-control" placeholder="Mobile">
                         </div>
-                        <div class="row">
-                            <textarea name="visitorMessage" id="visitorMessage" class="form-control" placeholder="Message" style="resize: none;"></textarea>
+                        <div class="form-row">
+                            <textarea name="visitorMessage" id="visitorMessage" class="form-control" placeholder="Message" style="resize: none;" rows="10"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button class="btn btn-out"><i class="fa-solid fa-check"></i> Submit</button>
                         </div>
                     </form>
                 </div>
             </div>
-        </main>
+        </div>
         <button class="nav_toggle"><i class="fa-solid fa-bars"></i></button>
         <nav class="vertical_nav">
             <ul class="nav_menu">
-                <li><a href="#" id="home_link">Home</a></li>
-                <li><a href="#" id="about_link">About</a></li>
-                <li><a href="#" id="skills_link">Skills</a></li>
-                <li><a href="#" id="projects_link">Projects</a></li>
-                <li><a href="#" id="contact_link">Contact</a></li>
+                <li><a href="#" id="home" class="nav_link active">Home</a></li>
+                <li><a href="#" id="about" class="nav_link">About</a></li>
+                <li><a href="#" id="skills" class="nav_link">Skills</a></li>
+                <li><a href="#" id="projects" class="nav_link">Projects</a></li>
+                <li><a href="#" id="contact" class="nav_link">Contact</a></li>
             </ul>
         </nav>
     </div>
